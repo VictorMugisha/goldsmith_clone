@@ -14,9 +14,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="max-w-[1440px] mx-auto">
 
-    <h1 class="text-center text-2xl text-blue-500 font-bold">Testing Tailwind Configuration</h1>
+    <section class="flex items-center justify-between px-3 py-4 md:px-10 md:py-10 lg:px-16 lg:py-6">
+        <img src="./images/logo.svg" class="w-24 md:w-32 lg:w-44">
+        <div class="block md:hidden">
+            <i class="uil uil-graduation-cap text-2xl cursor-pointer px-2"></i>
+            <i class="uil uil-bars text-2xl cursor-pointer px-2"></i>
+            <i class="uil uil-search text-2xl cursor-pointer px-2"></i>
+        </div>
+        <div class="hidden md:block">
+            <nav class="flex items-center justify-center gap-3 lg:gap-14">
+                <img src="./images/charm-menu-staff-students.svg" class="w-14 lg:w-44 cursor-pointer duration-200">
+                <img src="./images/charm-menu-search.svg" class="w-14 lg:w-24 cursor-pointer duration-200">
+                <img src="./images/charm-menu.svg" class="w-14 lg:w-20 cursor-pointer duration-200">
+            </nav>
+        </div>
+    </section>
     
 </body>
 </html>
