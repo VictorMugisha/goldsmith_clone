@@ -50,9 +50,9 @@
     </section>
 
     <section class="flex flex-col items-start md:px-16 md:pt-10 md:flex-row">
-        <div class="relative flex flex-col items-center">
-            <img src="./images/student1.jpeg" class="md:w-[550px] md:h-[400px] object-cover object-center cursor-pointer">
-            <div class="p-7 flex flex-col items-center justify-between bg-white relative top-[-30px] w-[450px] h-[260px]">
+        <div class="relative flex flex-col items-center w-full md:w-auto">
+            <img src="./images/student1.jpeg" class="relative w-[95%] md:w-[550px] md:h-[400px] object-cover object-center cursor-pointer">
+            <div class="p-7 flex flex-col items-center justify-between bg-white relative top-2 w-[90%] md:top-[-30px] md:w-[450px] h-[260px]">
                 <div class="text-center">
                     <h2 class="pb-5 text-2xl font-semibold">Live like a local</h2>
                     <p class="pb-4 text-center text-md">Find out more life in our campus, including accomodation information and local area hint and tips.</p>
@@ -63,9 +63,9 @@
                 </div>
             </div>
         </div>
-        <div class="lg:ml-4 relative top-[-120px]">
-            <div class="relative flex items-end justify-between gap-6">
-                <div class="p-7 flex flex-col items-center justify-between bg-white relative w-[300px] h-[250px]">
+        <div class="lg:ml-4 relative top-6 md:top-[-120px]">
+            <div class="relative flex flex-col items-center justify-end gap-6 md:items-end md:flex-row">
+                <div class="p-7 my-4 flex flex-col items-center justify-between bg-white relative w-[300px] h-[250px]">
                     <div class="text-center">
                         <h2 class="pb-5 text-2xl font-semibold">Study at Goldsmith</h2>
                         <p class="pb-4 text-center text-md">Explore our guide to studying at Goldsmiths.</p>
@@ -76,10 +76,10 @@
                     </div>
                 </div>
 
-                <div class="p-7 flex flex-col items-center relative justify-between bg-white w-[300px] h-[370px]">
+                <div class="p-10 pt-16 flex flex-col items-center relative justify-between bg-white w-[300px] h-[370px]">
                     <div class="text-center">
-                        <h2 class="pb-5 text-2xl font-semibold">Goldsmiths, University of London</h2>
-                        <p class="pb-4 text-center text-md">With world-leading research and high-quality teaching, we offer undergraduate and postgraduate degrees in the arts, humanities, social sciences, business, and computing from our campus in South East London.</p>
+                        <h2 class="px-4 pb-5 text-xl font-semibold">Goldsmiths, University of London</h2>
+                        <p class="pb-4 text-sm text-center">With world-leading research and high-quality teaching, we offer undergraduate and postgraduate degrees in the arts, humanities, social sciences, business, and computing from our campus in South East London.</p>
                     </div>
                     <div class="relative flex items-center justify-between w-full px-3 py-2 border-t border-black">
                         <a href="#" class="text-sm text-blue-500">About Goldsmith</a>
@@ -102,31 +102,32 @@
         </div>
     </section>
 
-    <section class="px-5 py-6 md:px-20"> 
-        <div class="flex items-start justify-start gap-6">
-            <img src="./images/icon-search.svg">
+    <section class="px-5 py-16 md:px-20"> 
+        <div class="flex items-start justify-start md:gap-6">
+            <img src="./images/icon-search.svg" class="hidden md:block md:h-auto">
             <div class="flex flex-col items-start w-full">
-                <h3 class="text-xl font-semibold">Search:</h3>
-                <form class="relative flex gap-6">
+                <h3 class="text-sm font-semibold md:text-xl">Search:</h3>
+                <form class="relative flex gap-2 md:gap-6">
                     <div class="relative flex items-center justify-start gap-3">
-                        <input type="radio" id="option1" class="w-4 h-4" name="group" checked>
-                        <p class="text-lg font-semibold">Degrees</p>
+                        <input type="radio" id="option1" class="md:h-4 md:w-4" name="group" checked>
+                        <p class="text-sm font-semibold md:text-lg">Degrees</p>
                     </div>
                     <div class="relative flex items-center justify-start gap-3">
-                        <input type="radio" id="option2" class="w-4 h-4" name="group" value="option2">
-                        <p class="text-lg font-semibold">Website</p><br>
+                        <input type="radio" id="option2" class="md:h-4 md:w-4" name="group" value="option2">
+                        <p class="text-sm font-semibold md:text-lg">Website</p><br>
                     </div>
                 </form>
-                <div class="relative flex items-center justify-center w-full gap-5 mt-3">
-                    <input type="text" class="relative flex-grow px-4 font-bold border border-black outline-none cursor-pointer h-[60px]" autocomplete="off">
-                    <button class="bg-yellow-400 w-[130px] h-[60px] border-b-4 border-green-950">Search</button>
+                <div class="relative flex items-center justify-center w-full gap-2 mt-3 md:gap-5">
+                    <input type="text" class="relative flex-grow px-2 md:px-4 font-bold border border-black outline-none cursor-pointer h-[40px] md:h-[60px]" autocomplete="off">
+                    <button class="hidden md:block bg-yellow-400 h-[40px] md:w-[130px] md:h-[60px] border-b-4 border-green-950">Search</button>
+                    <button class="md:hidden bg-yellow-400 h-[40px] w-[130px] border-b-4 border-green-950">Go</button>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="relative flex flex-col items-start justify-between gap-4 px-5 py-6 md:flex-row md:px-20">
-        <div class="relative w-1/2 h-[400px]">
+        <div class="relative w-full md:w-1/2 h-[400px]">
             <img src="./images/student1.jpeg" class="relative object-cover object-center w-full h-full">
             <div class="absolute right-0 flex flex-col justify-between h-40 p-4 bg-white w-60 bottom-5">
                 <h2 class="text-lg font-semibold text-center">Research which changes the world</h2>
@@ -136,8 +137,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-start justify-center w-1/2 gap-4">
-            <div class="relative flex flex-col items-center justify-center w-1/2">
+        <div class="flex flex-col items-start justify-center w-full gap-4 md:flex-row md:w-1/2">
+            <div class="relative flex flex-col items-center justify-center w-full md:w-1/2">
                 <img src="./images/student2.jpeg" class="relative object-cover object-center w-full h-[160px]">
                 <div class="flex flex-col justify-between p-4 bg-white h-64 w-60 bottom-5 relative top-[-10px]">
                     <h2 class="text-lg font-semibold text-center">Research shapes House of Commons Women and Equalities Committee report on misogyny in music</h2>
@@ -147,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative flex flex-col items-center justify-center w-1/2">
+            <div class="relative flex flex-col items-center justify-center w-full md:w-1/2">
                 <img src="./images/student2.jpeg" class="relative object-cover object-center w-full h-[160px]">
                 <div class="flex flex-col justify-between p-4 bg-white h-64 ex w-60 bottom-5 relative top-[-10px]">
                     <h2 class="text-lg font-semibold text-center">Major funding for a ground-breaking initiative aimed at redefining our understanding of hearing</h2>
@@ -161,36 +162,85 @@
     </section>
 
     <section class="relative flex flex-col items-start justify-between gap-4 px-5 py-6 md:flex-row md:px-20">
-        <div class="flex items-start justify-center w-1/2 gap-4">
-            <div class="relative flex flex-col items-center justify-center w-1/2">
+        <div class="flex flex-col items-start justify-center w-full gap-4 md:w-1/2 md:flex-row">
+            <div class="relative flex flex-col items-center justify-center w-full md:w-1/2">
                 <img src="./images/student2.jpeg" class="relative object-cover object-center w-full h-[160px]">
                 <div class="flex flex-col justify-between p-4 bg-white h-64 w-60 bottom-5 relative top-[-10px]">
-                    <h2 class="text-lg font-semibold text-center">Research shapes House of Commons Women and Equalities Committee report on misogyny in music</h2>
+                    <h2 class="text-base font-semibold text-center">Finding Aid, featuring new and existing paintings by Matt Connors and invited artists</h2>
                     <div class="relative flex items-center justify-between w-full px-3 py-2 border-t border-black">
-                        <a href="#" class="text-sm text-blue-500">Misogyny in music</a>
+                        <a href="#" class="text-sm text-blue-500">Goldsmith CCA</a>
                         <i class="text-2xl cursor-pointer uil uil-arrow-right"></i>
                     </div>
                 </div>
             </div>
-            <div class="relative flex flex-col items-center justify-center w-1/2">
+            <div class="relative flex flex-col items-center justify-center w-full md:w-1/2">
                 <img src="./images/student2.jpeg" class="relative object-cover object-center w-full h-[160px]">
                 <div class="flex flex-col justify-between p-4 bg-white h-64 ex w-60 bottom-5 relative top-[-10px]">
-                    <h2 class="text-lg font-semibold text-center">Major funding for a ground-breaking initiative aimed at redefining our understanding of hearing</h2>
+                    <h2 class="text-base font-semibold text-center">Reflect on Lewisham's hidden histories, uncovered as part of In Living Memory</h2>
                     <div class="relative flex items-center justify-between w-full px-3 py-2 border-t border-black">
-                        <a href="#" class="text-sm text-blue-500">£2.2 million funding</a>
+                        <a href="#" class="text-sm text-blue-500">In living memory</a>
                         <i class="text-2xl cursor-pointer uil uil-arrow-right"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="relative w-1/2 h-[400px]">
+        <div class="relative w-full md:w-1/2 h-[400px]">
             <img src="./images/student1.jpeg" class="relative object-cover object-center w-full h-full">
             <div class="absolute right-0 flex flex-col justify-between h-40 p-4 bg-white w-60 bottom-5">
-                <h2 class="text-lg font-semibold text-center">Research which changes the world</h2>
+                <h2 class="text-base font-semibold text-center">Join our alumni community for exclusive benefits and opportunities</h2>
                 <div class="relative flex items-center justify-between w-full px-3 py-2 border-t border-black">
-                    <a href="#" class="text-sm text-blue-500">Case studies</a>
+                    <a href="#" class="text-sm text-blue-500">Keep in touch</a>
                     <i class="text-2xl cursor-pointer uil uil-arrow-right"></i>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-1 gap-4 px-5 md:px-20 py-14 md:grid-cols-4">
+        <h2 class="py-6 text-2xl font-bold text-center text-gray-800 md:col-span-2">News</h2>
+        <h2 class="py-6 text-2xl font-bold text-center text-gray-800 md:col-span-2">Events</h2>
+        <div class="h-[300px] flex flex-col items-center justify-start pb-3">
+            <img src="./images/doctor.jpeg" class="w-full md:w-[300px] h-[170px] object-cover object-center">
+            <div class="pt-2 text-center">
+                <a href="#">
+                    <h2 class="pb-3 font-semibold text-blue-800 text-md">Scholar awarded prestigious grant for research in India</h2>
+                    <h3 class="text-sm font-semibold text-green-600">18 April 2024</h3>
+                </a>
+            </div>
+        </div>
+        <div class="h-[300px] flex flex-col items-center justify-start pb-3">
+            <img src="./images/Jane-Dabate-edit.jpeg" class="w-full md:w-[300px] h-[170px] object-cover object-center">
+            <div class="pt-2 text-center">
+                <a href="#">
+                    <h2 class="pb-3 font-semibold text-blue-800 text-md">Jane debate wins Pat Kavanagh Prize 2024</h2>
+                    <h3 class="text-sm font-semibold text-green-600">27 Mar 2024</h3>
+                </a>
+            </div>
+        </div>
+        <div class="h-[300px] flex flex-col items-center justify-between pb-3">
+            <img src="./images/image.jpeg" class="w-full md:w-[300px] h-[170px] object-cover object-center">
+            <div class="pt-2 text-center">
+                <a href="#">
+                    <h2 class="pb-3 font-semibold text-blue-800 text-md">LGBTQ+ Positive Voices @  Goldsmiths Exhibition</h2>
+                    <div class="relative flex items-center justify-center gap-1">
+                        <img src="./images/icon-calendar-999.svg">
+                        <h2 class="text-sm font-semibold text-green-700">Exhibition</h2>
+                    </div>
+                    <h3 class="text-sm font-semibold text-green-600">7 May 2024, 10:00am - 5:00pm</h3>
+                </a>
+            </div>
+        </div>
+        <div class="h-[300px] flex flex-col items-center justify-between pb-3">
+            <img src="./images/image2.jpeg" class="w-full md:w-[300px] h-[170px] object-cover object-center">
+            <div class="pt-2 text-center">
+                <a href="#">
+                    <h2 class="pb-3 font-semibold text-blue-800 text-md">Computer Science & Business Computing Degree Show</h2>
+                    <div class="relative flex items-center justify-center gap-1">
+                        <img src="./images/icon-calendar-999.svg">
+                        <h2 class="text-sm font-semibold text-green-700">Degree Shows</h2>
+                    </div>
+                    <h3 class="text-sm font-semibold text-green-600">7 May 2024, 12:00pm - 4:00pm</h3>
+                </a>
             </div>
         </div>
     </section>
