@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
-/* 
-    Banner Text Font-Family: Graphik Web, Arial, Helvetica, sans-serif;
-*/
+
+.p {
+    color: rgba(0, 0, 0, 0.379);
+}
